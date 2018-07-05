@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东欢迎登陆</title>
+    <style>
+        html, #section-big, section, header, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #head {
+            margin-left: 250px;
+            /*position: relative;*/
+        }
+
+        #log {
+            float: left;
+        }
+
+        #head i {
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+
+        #head-a {
+            position: relative;
+            left: 700px;
+            text-decoration: none;
+            top: -3px;
+            color: gray;
+            font-size: 12px;
+        }
+
+        #head-a:hover {
+            color: red;
+            text-decoration: dashed;
+        }
+
+        header a b {
+            position: relative;
+            top: 3px;
+        }
+
+        #top-p {
+            background-color: #fff8f0;
+            width: 100%;
+            height: 30px;
+            position: relative;
+            overflow: hidden;
+            top: 20px;
+        }
+
+        #top-p p {
+            color: gray;
+            font-size: 12px;
+            float: left;
+            margin-top: 6px;
+            margin-left: 4px;
+        }
+
+        #top-p p a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: black;
+        }
+
+        #top-p i {
+            float: left;
+            margin-left: 350px;
+            margin-top: 6px;
+        }
+
+        #section-big {
+            width: 100%;
+            height: 500px;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(190, 216, 191);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        #section-big img {
+            width: 68%;
+            height: 500px;
+            margin-left: 250px;
+        }
+
+        #div-link a {
+            text-decoration: none;
+            color: gray;
+            font-size: 12px;
+        }
+
+        #div-link {
+            font-size: 12px;
+            margin: 0 auto;
+            margin-left: 360px;
+            margin-top: 30px;
+        }
+
+        #div-p {
+            font-size: 12px;
+            color: gray;
+            margin: 0 auto;
+            margin-left: 635px;
+            margin-top: 20px;
+        }
+
+        section {
+            position: relative;
+        }
+
+        #section-div1 {
+            background-color: #fff8f0;
+            width: 330px;
+            height: 35px;
+            position: absolute;
+            top: 20px;
+            right: 280px;
+        }
+
+        #section-div1 p {
+            font-size: 12px;
+            color: gray;
+            margin-top: 11px;
+        }
+
+        #section-div1 i {
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 8px;
+        }
+
+        #section-div2 {
+            background-color: white;
+            width: 330px;
+            height: 360px;
+            position: absolute;
+            top: 55px;
+            right: 280px;
+        }
+
+        #div-button1 a {
+            text-decoration: none;
+            color: gray;
+            margin-left: 50px;
+            margin-top: 5px;
+            border-right: 1px solid rgb(244, 244, 244);
+            padding-right: 40px;
+        }
+
+        #div-button2 a {
+            text-decoration: none;
+            color: gray;
+            padding: 0;
+            margin: 0;
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+
+        .button {
+            font-size: 18px;
+        }
+
+        #div-button1 {
+            border-bottom: 1px solid rgb(244, 244, 244);
+            width: 165px;
+            height: 40px;
+            float: left;
+            margin-top: 10px;
+        }
+
+        #div-button2 {
+            border-bottom: 1px solid rgb(244, 244, 244);
+            width: 165px;
+            height: 40px;
+            float: right;
+            margin-top: 10px;
+        }
+
+        #div-button1:hover a{
+            color: rgb(182, 29, 29);
+            font-weight: bold;
+        }
+        #div-button2:hover a{
+            color: rgb(182, 29, 29);
+            font-weight: bold;
+        }
+        #section-div3 {
+            height: 50px;
+            width: 330px;
+            position: absolute;
+            top: 415px;
+            right: 280px;
+            background-color: rgb(252, 252, 252);
+            border-top: 1px solid rgb(244, 244, 244);
+        }
+
+        #section-div3 a {
+            text-decoration: none;
+            float: right;
+            font-size: 14px;
+        }
+
+        #section-div3 ul li {
+            list-style-type: none;
+            float: left;
+            margin-right: 10px;
+            color: gray;
+            font-size: 12px;
+        }
+
+        #section-div3 a {
+            margin-right: 20px;
+            color: rgb(182, 29, 29);
+            margin-top: -2px;
+        }
+
+        #section-div3 ul {
+            margin-left: -22px;
+            margin-top: 16px;
+        }
+
+        #section-div3 ul li:nth-of-type(1) b {
+            background-image: url("images/QQ-weixin.png");
+            background-position: 1px, 1px;
+            width: 20px;
+            height: 18px;
+            float: left;
+            margin-right: 2px;
+        }
+
+        #section-div3 ul li:nth-of-type(2) b {
+            background-image: url("images/QQ-weixin.png");
+            background-position: 20px, 1px;
+            width: 20px;
+            height: 18px;
+            float: left;
+            margin-right: 2px;
+        }
+
+        #b {
+            background-image: url("images/pwd-icons-new.png");
+            background-position: 20px, 7px;
+            width: 20px;
+            height: 25px;
+            float: left;
+            margin-left: 100px;
+        }
+
+        .biaoqian {
+            color: rgb(182, 29, 29);
+        }
+
+        #xuanfu-big {
+            /*background-color: red;*/
+            width: 270px;
+            height: 200px;
+            position: relative;
+            top: 70px;
+            padding-left: 60px;
+        }
+
+        #xuanfu-1 {
+            width: 150px;
+            height: 150px;
+            /*background-color: blue;*/
+            border: 1px solid rgb(244, 244, 244);
+            position: absolute;
+            top: 18px;
+            left: 75px;
+            padding: 10px;
+        }
+
+        #xuanfu-1 img {
+            margin: 0;
+            padding: 0px;
+        }
+
+        #xuanfu-2 {
+            width: 140px;
+            height: 180px;
+            /*background-color: black;*/
+            position: absolute;
+            right: 0px;
+            top: 15px;
+            display: none;
+        }
+
+        #section-div2 ul:nth-of-type(1) li {
+            list-style-type: none;
+            float: left;
+            position: relative;
+            top: 65px;
+            left: 20px;
+            margin-left: 20px;
+            font-size: 12px;
+            color: gray;
+        }
+
+        #section-div2 ul:nth-of-type(1) li:nth-of-type(2) {
+            margin-right: 30px;
+        }
+
+        #section-div2 ul:nth-of-type(1) li a {
+            text-decoration: none;
+        }
+
+        #section-div2 ul:nth-of-type(2) li {
+            list-style-type: none;
+            float: left;
+            margin: 0;
+            padding: 0;
+            /*margin-top: 100px;*/
+            margin-right: 20px;
+            font-size: 14px;
+            color: gray;
+            /*margin-left: 5px;*/
+            /*overflow: hidden;*/
+            position: relative;
+            top: 80px;
+            left: -20px;
+        }
+
+        #section-div2 ul:nth-of-type(2) li:nth-of-type(1) {
+            margin-left: 30px;
+        }
+
+        #section-div2 ul li b {
+            margin-top: -2px;
+            margin-right: 2px;
+        }
+
+        #section-div2 ul li:nth-of-type(1) b {
+            background-image: url("images/qr-coagent.png");
+            width: 25px;
+            height: 25px;
+            float: left;
+        }
+
+        #section-div2 ul li:nth-of-type(2) b {
+            background-image: url("images/qr-coagent.png");
+            background-position: -187px 0;
+            width: 25px;
+            height: 25px;
+            float: left;
+        }
+
+        #section-div2 ul li:nth-of-type(3) b {
+            background-image: url("images/qr-coagent.png");
+            background-position: 27px 0;
+            width: 26px;
+            height: 25px;
+            float: left;
+        }
+
+        #div-link a:hover {
+            color: rgb(182, 29, 29);
+        }
+
+        .dianjiqiehuan {
+            font-weight: bold;
+        }
+
+        .biaodan {
+            width: 280px;
+            height: 40px;
+            border: 1px solid gray;
+            position: relative;
+            top: 80px;
+            left: 25px;
+            margin-top: 30px;
+            box-sizing: border-box;
+        }
+
+        #denglu-buttom {
+            width: 280px;
+            height: 40px;
+            background-color: rgb(228, 57, 60);
+            position: relative;
+            top: 135px;
+            left: 25px;
+            cursor: pointer;
+        }
+
+        #denglu-buttom span {
+            font-size: 20px;
+            color: white;
+            font-family: "Microsoft YaHei UI";
+            line-height: 40px;
+            margin-left: 40%;
+        }
+
+        #biaodan a {
+            text-decoration: none;
+            font-size: 12px;
+            color: gray;
+            position: absolute;
+            bottom: 100px;
+            right: 25px;
+        }
+
+        #biaodan a:hover {
+            color: red;
+            font-weight: normal;
+        }
+
+        #biaodan-username input {
+            height: 38px;
+            width: 237px;
+            float: right;
+            box-sizing: border-box;
+            margin-top: -20px;
+            padding-left: 5px;
+            border: 0;
+        }
+
+        #biaodan-password input {
+            height: 38px;
+            width: 237px;
+            float: right;
+            box-sizing: border-box;
+            padding-left: 5px;
+            /*margin-top: -5px;*/
+            border: 0;
+        }
+
+        #biaodan-username label {
+            width: 40px;
+            height: 38px;
+            background-image: url("images/pwd-icons-new.png");
+            background-position: 2px 1px;
+            float: left;
+            margin-top: -20px;
+            background-color: rgb(243, 243, 243);
+            border-right: 1px solid gray;
+        }
+
+        #biaodan-password label {
+            width: 40px;
+            height: 38px;
+            background-image: url("images/pwd-icons-new.png");
+            background-position: -46px 1px;
+            float: left;
+            background-color: rgb(243, 243, 243);
+            border-right: 1px solid gray;
+        }
+
+        #biaodan-tishi {
+            width: 280px;
+            height: 20px;
+            background-color: rgb(255, 235, 235);
+            border: 1px solid rgb(250, 204, 198);
+            box-sizing: border-box;
+            position: absolute;
+            top: 85px;
+            left: 25px;
+            font-size: 12px;
+            color: red;
+            padding-left:25px;
+            display: none;
+        }
+        #biaodan-tishi b{
+            background-image: url("images/pwd-icons-new.png");
+            background-position: -100px -48px;
+            background-repeat: repeat;
+            width: 20px;
+            height: 20px;
+            float: left;
+            position: relative;
+            left: -15px;
+        }
+        #biaodan{
+            display: none;
+        }
+        .x{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-image: url("images/pwd-icons-new.png");
+            background-position: -27px -145px;
+            top:50%;
+            margin-top: -5px;
+            left: 260px;
+            display:none;
+        }
+        #top-p a:hover{
+            text-decoration: underline;
+        }
+         a:hover{
+            text-decoration: underline;
+        }
+        #biaodan a:hover{
+            text-decoration: underline;
+        }
+        #section-div3 ul li span:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #section-div3 a:hover{
+            text-decoration: underline;
+        }
+        #div-link a:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<header>
+    <div id="head">
+        <div id="log">
+            <img src="images/logo-201305-b.png" alt="">
+        </div>
+        <i>
+            <img src="images/l-icon.png" alt="">
+        </i>
+    </div>
+    <a href="#" id="head-a">
+        <b><img src="images/q-icon.png" alt=""></b>
+        页面登录，调查问卷
+    </a>
+    <div id="top-p">
+        <i><img src="images/icon-tips.png" alt=""></i>
+        <p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版 <a href="#">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
+    </div>
+</header>
+<section>
+    <div id="section-big">
+        <img src="images/5b35f54eN3d396dcd.jpg" alt="">
+    </div>
+    <div id="section-div1">
+        <i>
+            <img src="images/icon-tips.png" alt="">
+        </i>
+        <p>
+            京东不会以任何理由要求您转账汇款，谨防诈骗。
+        </p>
+    </div>
+    <div id="section-div2">
+        <div id="div-button1" class="button"><a href="#">扫码登录</a></div>
+        <div id="div-button2" class="button"><a href="#">账户登录</a></div>
+        <div id="xuanfu-big">
+            <div id="xuanfu-1">
+                <img src="images/show.png" alt="">
+            </div>
+            <div id="xuanfu-2">
+                <img src="images/phone-orange.png" alt="">
+            </div>
+        </div>
+        <ul>
+            <li>打开<a href="#">手机京东</a></li>
+            <li>扫描二维码</li>
+        </ul>
+        <ul>
+            <li><b></b>免输入</li>
+            <li><b></b>更快</li>
+            <li><b></b>更安全</li>
+        </ul>
+        <div id="biaodan">
+            <div id="biaodan-tishi">
+                <b>
+
+                </b>
+                请输入账户名和密码
+            </div>
+            <div id="biaodan-username" class="biaodan">
+                <label for="log"></label>
+                <div class="x"></div>
+                <input type="text" name="loginname" tabindex="1" autocomplete="off" placeholder="邮箱/用户名/已验证手机">
+            </div>
+            <div id="biaodan-password" class="biaodan">
+                <label for="log"></label>
+                <div class="x"></div>
+                <input type="password" name="loginpassword" tabindex="2" autocomplete="off" placeholder="密码">
+            </div>
+            <a href="#">忘记密码</a>
+            <div id="denglu-buttom">
+                <span>登&nbsp;&nbsp;&nbsp;录</span>
+            </div>
+        </div>
+    </div>
+    <div id="section-div3">
+        <ul>
+            <li>
+                <b></b>
+                <span>QQ</span>
+            </li>
+            <li>
+                <b></b>
+                <span>微信</span>
+            </li>
+        </ul>
+        <b id="b"></b>
+        <a href="#">立即注册</a>
+    </div>
+</section>
+<footer>
+    <div id="foot-big">
+        <div id="div-link">
+            <a href="#">关于我们</a>&nbsp; &nbsp;| &nbsp;&nbsp;<a href="#">联系我们</a>&nbsp; &nbsp;| &nbsp;&nbsp;
+            <a href="#">人才招聘</a> &nbsp;&nbsp;| &nbsp;&nbsp;<a href="#">商家入驻</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a
+                href="#">广告服务</a>&nbsp; &nbsp;| &nbsp;&nbsp;<a href="#">手机京东</a> &nbsp;&nbsp;| &nbsp;&nbsp;
+            <a href="#">友情链接</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">销售联盟</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a
+                href="#">京东社区</a> &nbsp;&nbsp;|&nbsp; &nbsp;<a href="#">京东公益</a> &nbsp;&nbsp;|&nbsp; &nbsp;<a href="#">English
+            Site</a>
+        </div>
+        <div id="div-p">
+            <p>Copyright © 2004-2018 京东JD.com 版权所有</p>
+        </div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        $("#xuanfu-1").mouseover(function () {
+            $(this).stop().animate({"left": "10"}, 300, function () {
+                $("#xuanfu-2").show();
+            });
+        }).mouseleave(function () {
+            $("#xuanfu-2").hide();
+            $(this).stop().animate({"left": "70"}, 300);
+        });
+        $("#div-button1").click(function () {
+            $(this).children("a").addClass("dianjiqiehuan").css("color","rgb(182, 29, 29)");
+            $("#section-div2 #xuanfu-big").show();
+            $("#section-div2 ul:lt(3)").show();
+            $("#biaodan").hide();
+            $("#div-button2").children("a").removeClass("dianjiqiehuan").css("color","gray");
+
+        });
+        $("#div-button2").click(function () {
+            $(this).children("a").addClass("dianjiqiehuan").css("color","rgb(182, 29, 29)");
+            $("#section-div2 #xuanfu-big").hide();
+            $("#section-div2 ul:lt(3)").hide();
+            $("#biaodan").show();
+            $("#div-button1").children("a").removeClass("dianjiqiehuan").css("color","gray");
+        });
+        $("#biaodan input").keyup(function () {
+             if(this.value.length>0){
+                $(this).prev().show();
+             }
+        });
+        $(".x").click(function () {
+            $(this).siblings("input").val("");
+            $(this).hide();
+        })
+        $("#denglu-buttom").click(function () {
+            if($(".biaodan input:eq(0)").val().length==0){
+                $("#biaodan-tishi").show();
+            }else if($(".biaodan input:eq(1)").val().length==0){
+                $("#biaodan-tishi").show();
+            }else{
+                $("#biaodan-tishi").hide();
+            }
+        })
+    });
+</script>
+</body>
+</html>
