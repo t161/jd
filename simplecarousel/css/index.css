@@ -1,0 +1,62 @@
+ul,li,body{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+#sc-box{
+    width: 1000px;
+    height:700px;
+    margin: auto;
+    position: relative;/*相对定位，让子元素有个标准*/
+    cursor: pointer;
+    margin-top: 25px;
+}
+#sc-box .imgs img{
+    width: 1000px;
+    height: 700px;
+}
+#sc-box .imgs img:first-child~img{
+    display: none;
+}
+.pre,.next{
+    width:25px;
+    height:45px;
+    color: #333333;;
+    line-height: 36px;
+    text-align: center;
+    background-color: rgba(125,125,125,0.5);
+    position: absolute;
+    top:43%;
+    bottom:43%;
+    display: none;
+}
+.pre{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.btns{
+    position: absolute;
+    /*left:42%;*/
+    left: 50%;
+    bottom: 40px;
+    color:white;
+    margin-left: -90px;
+    width:190px;
+}
+.btns .current{background-color: #4D4D4D}
+.btns li{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color:white;
+    background-color: #333;
+    float:left;
+}
